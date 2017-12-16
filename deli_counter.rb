@@ -20,7 +20,7 @@ end
 
 def now_serving(deli)
   if deli.any?
-    puts "Currently serving #{deli[0]}"
+    puts "Currently serving #{deli[0]}."
   else
     puts ""
   end
