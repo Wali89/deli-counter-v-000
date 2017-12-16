@@ -1,10 +1,11 @@
 def line(deli)
 
   if deli.any?
-    deli_line = deli.map.with_index { |customer, i| (i.to_i + 1) + ". " + customer }
-    deli_line.unshift("The line is currently: ")
-    deli_line.join
-    puts deli.line
+    current_line = "The Line is currently:"
+    deli.each.with_index(1) do |person, i|
+      current_line << "#{i}. #{person}"
+    end
+    puts current_line
   else
     puts "The line is currently empty."
   end
