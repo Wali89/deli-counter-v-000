@@ -17,3 +17,12 @@ def take_a_number(deli, name)
   line_number = deli.index(name) + 1
   puts "Welcome, #{name}. You are number #{line_number} in line."
 end
+
+def now_serving(deli)
+  if deli.any?
+    puts "Currently serving #{deli[0]}"
+  else
+    puts ""
+  end
+
+end
