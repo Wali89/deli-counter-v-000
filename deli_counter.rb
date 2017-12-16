@@ -11,3 +11,9 @@ def line(deli)
   end
 
 end
+
+def take_a_number(deli, name)
+  deli << name
+  line_number = name.index + 1
+  puts "Welcome, #{name}. You are number #{line_number} in line."
+end
