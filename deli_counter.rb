@@ -21,7 +21,7 @@ end
 def now_serving(deli)
   if deli.any?
     puts "Currently serving #{deli[0]}."
-    deli.unshift
+    deli.shift
   else
     puts ""
   end
